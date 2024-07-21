@@ -1,14 +1,24 @@
 # Tensor Network Project
-
 This project implements various functionalities for tensor networks, focusing on Matrix Product States (MPS) and Density Matrix Renormalization Group (DMRG) algorithms. The implementation is structured into several Python scripts, each handling different aspects of the computations.
 
-## Project Structure
+## Project Background
 
-### Files
+The original objective of this project was to study a fluxonium quantum circuit, a superconducting qubit system used in quantum computing research. However, the scope of the project evolved, and the primary focus became the implementation of the Density Matrix Renormalization Group (DMRG) algorithm within the tensor network formalism. This implementation serves as a foundational tool for future studies on quantum circuits and other one-dimensional quantum systems.
 
-- **long_run.py**: This script is likely the main entry point of the project, coordinating the execution of tensor network operations using the functions defined in the other scripts.
-- **functions_mps.py**: Contains functions and utilities related to Matrix Product States (MPS), a key component of tensor networks used to efficiently represent quantum states.
-- **functions_dmrg.py**: Includes functions and algorithms for the Density Matrix Renormalization Group (DMRG), a numerical variational technique designed to find the low-energy states of quantum many-body systems.
+## Libraries:
+- "functions_mps.py" contains the basical functions needed to work in the MPS formalism
+- "functions_dmrg.py" contains the DMRG functions (Lanczos and sweeps)
+- "total.py" contains the structure of the DMRG algorithm, calling all the other functions 
+
+### Run files:
+- "long_run.py" calls the DMRG function using different parameters in order to probe different parameters
+
+### Graphical tools:
+- "plots.html" is the code we used to create the graphical results shown in the presentation
+
+Documents:
+- "presentation.pdf" is the final presentation (of both the theory and the results part)
+- "task.pdf" is the assignment document
 
 ## Overview
 
